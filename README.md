@@ -1,4 +1,4 @@
-## Color-based Image Segmentation (with K-Means clustering)
+## Color-based Image Segmentation using K-Means clustering
 
 ### Standard K-Means clustering
 
