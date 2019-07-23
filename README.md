@@ -8,6 +8,14 @@ K-Means clustering is a vector quantization algorithm that partitions *n* observ
 
 The bare bones of this algorithm are as follows :
 
+a. Initialization
+
+b. Assignment
+
+c. Update
+
+d. Repeat
+
 ![Alt Text](kmeans.gif)
 
 ### Modified K-Means clustering
