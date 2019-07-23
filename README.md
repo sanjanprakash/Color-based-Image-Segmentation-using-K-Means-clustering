@@ -8,13 +8,13 @@ K-Means clustering is a vector quantization algorithm that partitions *n* observ
 
 The bare bones of this algorithm are as follows :
 
-a. Initialization
+(a) Initialization - We randomly pick any *k* points from the set of observations as our initial guess as to what the *k* cluster centroids could be.
 
-b. Assignment
+(b) Assignment - For each observation, find the cluster centroid closest to it in terms of the Euclidean distance. Once found, this observation will now simply be represented by that cluster centroid and is now said to belong to that particular cluster.
 
-c. Update
+(c) Update - Once all observations have been assigned to a cluster, the new centroids for the next iteration are computed. The mean of all the observations mapped to one particular cluster gives us an updated centroid.
 
-d. Repeat
+(d) Repeat - Steps (b) and (c) constitute a single iteration. We will continue with these iterations until the centroids no longer move. This is when we claim 'convergence' to have been achieved.
 
 ![Alt Text](kmeans.gif)
 
