@@ -34,4 +34,10 @@ We propose a strategy that takes inspiration from the well-documented K-Means++ 
 
 **(e) Repeat** - Steps (b) to (d) are repeatedly performed until we have *k* initial centroids.
 
-The intuition behind this approach is to ensure a good spread amongst the *k* initial cluster centroids. The greater the Euclidean distance between an observation point and its closest-lying cluster centroid, the greater are its odds of being chosen as an initial centroid. This approach to initialization leads to a more refined initial guess as to what the initial cluster centroids would be and also leads to a more assured convergence to a global minimum, albeit at the cost of performing a pseudo-K-Means clustering to get there which would cost us some pre-computation time. However, since the running time of the standard K-Means algorithm is super-polynomial in its input size, asymptotically, this extra bit of pre-computation will not greatly affect the overall running time.  
+The intuition behind this approach is to ensure a good spread amongst the *k* initial cluster centroids. The greater the Euclidean distance between an observation point and its closest-lying cluster centroid, the greater are its odds of being chosen as an initial centroid. This approach to initialization leads to a more refined initial guess as to what the initial cluster centroids would be and also leads to a more assured convergence to a global minimum, albeit at the cost of performing a pseudo-K-Means clustering to get there which would cost us some pre-computation time. However, since the running time of the standard K-Means algorithm is super-polynomial in its input size, asymptotically, this extra bit of pre-computation will not greatly affect the overall running time.
+
+### Analysis
+
+![Alt Text](test_image.jpeg)
+
+We chose to work with an image of the *Bridges of Amsterdam* painting by Leonid Afremov.  
