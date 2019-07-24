@@ -38,6 +38,8 @@ The intuition behind this approach is to ensure a good spread amongst the *k* in
 
 ### Analysis
 
-<span style="display:block;text-align:center">![Test Automation](test_image.jpeg)</span>
+<p align="center">
+  <img src = "https://github.com/sanjanprakash/Color-based-Image-Segmentation-using-K-Means-clustering/test_image.jpeg">
+</p>
 
 We chose to work with an image of the *Bridges of Amsterdam* painting by Leonid Afremov.  
