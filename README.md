@@ -21,3 +21,17 @@ The bare bones of this algorithm are as follows :
 ### Modified K-Means clustering
 
 Graphically, the goal that we set to achieve with such clustering is to have the radial distance from a cluster centroid to be very similar for all points that fall under that cluster. And with this naive random initialization of cluster centroids, we are never guaranteed an optimal solution as we could easily converge to some local minimum. Further, it is never beyond the realm of possibility to have some of the initial cluster centroid choices to be closer to each other than desired. This undermines the purpose of redundancy reduction in images and opens up the possibility for an **alternative initialization strategy**.
+
+We propose a strategy that takes inspiration from the well-documented K-Means++ algorithm and at the same time has lesser randomness than the K-Means++ approach to initialization and also the standard K-Means initialization. Here is how we proceed :
+
+(a) Seeding - Start by randomly picking one of the points of observation as a cluster centroid. This stage is akin to the first stage of initialization in K-Means++ as well.
+
+(b) Assignment & Max-tracking - Very similar to the assignment step in the standard K-Means algorithm. In addition, during each assignment, keep track of the observation point with the largest distance from its cluster centroid.
+
+(c) Update - Same as the update step in the standard K-Means algorithm.
+
+(d) Another centroid - Add the observation point that was found to have been the farthest from its cluster centroid to the set of centroids that will form our 'initial guess'.
+
+(e) Repeat - Steps (b) to (d) are repeatedly performed until we have *k* initial centroids.
+
+The intuition behind this approach is to ensure a good spread amongst the *k* initial cluster centroids. The greater the Euclidean distance between an observation point and its closest-lying cluster centroid, the greater are its odds of being chosen as an initial centroid. This approach to initialization leads to a more refined initial guess as to what the initial cluster centroids would be and also leads to a more assured convergence to a global minimum, albeit at the cost of performing a pseudo-K-Means clustering to get there which would cost us some pre-computation time. However, since the running time of the standard K-Means algorithm is super-polynomial in its input size, asymptotically, this extra bit of pre-computation will not greatly affect the overall running time.  
