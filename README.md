@@ -16,7 +16,9 @@ The bare bones of this algorithm are as follows :
 
 **(d) Repeat** - Steps (b) and (c) constitute a single iteration. We will continue with these iterations until the centroids no longer move. This is when we claim 'convergence' to have been achieved.
 
-![Alt Text](kmeans.gif)
+<p align="center">
+  <img src = "https://github.com/sanjanprakash/Color-based-Image-Segmentation-using-K-Means-clustering/blob/master/kmeans.gif">
+</p>
 
 ### Modified K-Means clustering
 
