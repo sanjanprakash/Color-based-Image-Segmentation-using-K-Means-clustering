@@ -44,4 +44,8 @@ The intuition behind this approach is to ensure a good spread amongst the *k* in
   <img src = "https://github.com/sanjanprakash/Color-based-Image-Segmentation-using-K-Means-clustering/blob/master/test_image.jpeg">
 </p>
 
-We chose to work with an image of the *Bridges of Amsterdam* painting by Leonid Afremov.  
+We chose to work with an image of the *Bridges of Amsterdam* painting by Leonid Afremov. It is neat example of an image with a wide color contrast spectrum which enables us to view the results of color reduction in better light. It will also allow us to view the mapping of '*similar*' colors to a particular cluster. Thus, the output images generated are images with the original pixels (observation points) replaced by their corresponding cluster centroids. We experimented with different counts of clusters/reduced colors on the same image - 4, 8, 16, 32.
+
+<p align="center">
+  <img src = "https://github.com/sanjanprakash/Color-based-Image-Segmentation-using-K-Means-clustering/blob/master/4_clusters.jpg">
+</p>
