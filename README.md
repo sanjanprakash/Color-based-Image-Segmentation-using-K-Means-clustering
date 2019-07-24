@@ -38,6 +38,6 @@ The intuition behind this approach is to ensure a good spread amongst the *k* in
 
 ### Analysis
 
-![Alt Text](test_image.jpeg)
+<div style="text-align:center"><img src="test_image.jpeg" /></div>
 
 We chose to work with an image of the *Bridges of Amsterdam* painting by Leonid Afremov.  
