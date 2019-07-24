@@ -4,7 +4,7 @@
 
 ### Standard K-Means clustering
 
-K-Means clustering is a vector quantization algorithm that partitions *n* observations into *k* clusters. In simpler terms, it maps an observation to one of the *k* clusters based on the squared (Euclidean) distance of the obseravtion from the cluster centroids. Once the mapping is done, the observation point can simply be represented by the centroid of its respective cluster. Applying this on an image would imply reducing it to an image with *k* colors. This is an iterative refinement procedure that updates the cluster centroids in each iteration. The algorithm terminates when a certain convergence point is reached. The most commonly chosen point of convergence is when the cluster centroids no longer move or get updated.
+K-Means clustering is a vector quantization algorithm that partitions *n* observations into *k* clusters. In simpler terms, it maps an observation to one of the *k* clusters based on the squared (Euclidean) distance of the obseravtion from the cluster centroids. The intuition here is to minimize the variance between points within the same cluster and maximize the variance amongst points from different clusters. Once the mapping is done, the observation point can simply be represented by the centroid of its respective cluster. Applying this on an image would imply reducing it to an image with *k* colors. This is an iterative refinement procedure that updates the cluster centroids in each iteration. The algorithm terminates when a certain convergence point is reached. The most commonly chosen point of convergence is when the cluster centroids no longer move or get updated.
 
 The bare bones of this algorithm are as follows :
 
@@ -19,3 +19,5 @@ The bare bones of this algorithm are as follows :
 ![Alt Text](kmeans.gif)
 
 ### Modified K-Means clustering
+
+Graphically, the goal that we set to achieve with such clustering is to have the radial distance from a cluster centroid to be very similar for all points that fall under that cluster. And with this naive random initialization of cluster centroids, we are never guaranteed an optimal solution as we could easily converge to some local minimum. Further, it is never beyond the realm of possibility to have some of the initial cluster centroid choices to be closer to each other than desired. This undermines the purpose of redundancy reduction in images and opens up the possibility for an **alternative initialization strategy**.
