@@ -39,7 +39,7 @@ The intuition behind this approach is to ensure a good spread amongst the *k* in
 ### Analysis
 
 <p align="center">
-  <img src = "https://github.com/sanjanprakash/Color-based-Image-Segmentation-using-K-Means-clustering/test_image.jpeg">
+  <img src = "https://github.com/sanjanprakash/Color-based-Image-Segmentation-using-K-Means-clustering/blob/master/test_image.jpeg">
 </p>
 
 We chose to work with an image of the *Bridges of Amsterdam* painting by Leonid Afremov.  
