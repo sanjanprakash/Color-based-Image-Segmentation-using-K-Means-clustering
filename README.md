@@ -48,16 +48,20 @@ We chose to work with an image of the *Bridges of Amsterdam* painting by Leonid 
 
 <p align="center">
   <img src = "https://github.com/sanjanprakash/Color-based-Image-Segmentation-using-K-Means-clustering/blob/master/Results/4_clusters.jpg">
+  *Fig. 1 : 4 colors/clusters*
 </p>
 
 <p align="center">
   <img src = "https://github.com/sanjanprakash/Color-based-Image-Segmentation-using-K-Means-clustering/blob/master/Results/8_clusters.jpg">
+  *Fig. 2 : 8 colors/clusters*
 </p>
 
 <p align="center">
   <img src = "https://github.com/sanjanprakash/Color-based-Image-Segmentation-using-K-Means-clustering/blob/master/Results/16_clusters.jpg">
+  *Fig. 3 : 16 colors/clusters*
 </p>
 
 <p align="center">
   <img src = "https://github.com/sanjanprakash/Color-based-Image-Segmentation-using-K-Means-clustering/blob/master/Results/32_clusters.jpg">
+  *Fig. 4 : 32 colors/clusters*
 </p>
